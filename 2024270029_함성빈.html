@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 한글, 특수문자 깨짐 방지 -->
+    <meta charset="UTF-8">
+    <!-- 반응형 디자인 유지용 코드 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+    <link rel="stylesheet" href="./media/styles.css">
+</head>
+<body>
+<div class="container">
+    <header="hero">
+        <div class="audio-player">
+            <!-- 오디오 태그 -->
+            <audio id="music" autoplay loop>
+                <source src="./media/JAZZ.mp3" type="audio/mpeg">
+            </audio>
+            <!-- html 내장 자바 스크립트 활용 버튼 -->
+            <button class="audio-button" onclick="document.getElementById('music').play()">▶</button>
+            <button class="audio-button" onclick="document.getElementById('music').pause()">■</button>
+        </div>
+        <div class="hero-content">
+            <h1>안녕하세요. 함성빈입니다.</h1>
+            <!-- 원형 사진 -->
+            <div class="circle"></div>
+            <!-- 취미 이동 -->
+            <a href="#hobby" class="button">저의 관심사는...</a>
+        </div>
+    </header>
+    <section id="about" class="section">
+        <h2>저에 대해 <i>간단한 소개</i>를 해드리자면...</h2>
+        <p>
+            <ins>
+                이름 : 함성빈 <br>
+            </ins>
+                사는곳 : 경기도 화성시 <br>
+                생년월일 : 2000.09.04 <br>
+                <mark>현재 목표</mark> : 좋은 학점으로 졸업 후 서버관리직으로 취업하기<br>
+        </p>
+    </section>
+
+    <section id="hobby" class="section">
+        <h2>MY HOBBY</h2>
+        <article class="hobby-grid">
+            <a href="health.html" class="hobby-item">
+                <img src="./media/헬스.png" alt="hobby1">
+                <h3>HEALTH</h3>
+            </a>
+            <a href="travel.html" class="hobby-item">
+                <img src="./media/여행.jpg" alt="hobby2">
+                <h3>TRAVEL</h3>
+            </a>
+            <a href="movie.html" class="hobby-item">
+                <img src="./media/영화.png" alt="hobby3">
+                <h3>MOVIE</h3>
+            </a>
+        </article>
+        <article>
+            <h3>시간표</h3>
+            <div class="table-container">
+            <table border="5">
+                <tr>
+                    <th></th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                <tr>
+                <tr>
+                    <td>1교시</td>
+                    <td rowspan="6"> Python</td>
+                    <td rowspan="6">HTML</td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="16">Empty</td>
+                <tr>
+                <tr>
+                    <td>2교시</td>
+                    <td></td>
+                    <td></td>
+                <tr>
+                <tr>
+                    <td>3교시</td>
+                    <td rowspan="4">Excel</td>
+                    <td rowspan="4">Health<br>Care</td>
+                <tr>
+                <tr>
+                    <td>4교시</td>
+                    <td></td>
+                    <td></td>
+                <tr>
+                <tr>
+                    <td>5교시</td>
+                    <td rowspan="3">Infosec</td>
+                    <td rowspan="3">Data<br>Structure</td>
+                    <td></td>
+                    <td rowspan="2">SQL</td>
+                </tr>
+                <tr>
+                    <td>6교시</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7교시</td>
+                    <td></td>
+                    <td>Elective</td>
+                </tr>
+                <tr>
+                    <td>8교시</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>SQL</td>
+                </tr>
+        </table>
+        </div>
+        </article>
+    </section>
+</div>
+
+    <footer class="footer">
+        <p>&nbsp;</p>
+    </footer>
+</body>
+</html>
