@@ -144,7 +144,7 @@ body {
 .hobby-item img {
     height: 300px;
     width: 300px;
-    padding-top: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .hobby-item h3 {
