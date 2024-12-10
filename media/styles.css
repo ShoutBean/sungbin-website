@@ -98,9 +98,9 @@ body {
 }
 
 .hobby-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     padding: 20px;
 }
 
